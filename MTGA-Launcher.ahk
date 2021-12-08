@@ -13,8 +13,8 @@ SetTitleMatchMode, 3  ; ensures that Title matches exactly WinTitle
 	Run, C:\Users\adria\AppData\Local\Programs\untapped-companion\Untapped.gg Companion.exe, , Min
 	Run, C:\Users\adria\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\17Lands.com\17Lands MTGA Client.appref-ms
 	Run, D:\Wizards of the Coast\MTGA\MTGALauncher\MTGALauncher.exe
-; Launch BorderlessGaming without Admin through CMD
-	;run, %comspec% /c "set __COMPAT_LAYER=RunAsInvoker && start "" ^"D:\Borderless Gaming\BorderlessGaming.exe^""
+ ;Launch BorderlessGaming without Admin through CMD
+	run, %comspec% /c "set __COMPAT_LAYER=RunAsInvoker && start "" ^"D:\Borderless Gaming\BorderlessGaming.exe^""
 
 Sleep, 5000
 WinClose, Untapped.gg
@@ -36,8 +36,8 @@ IfMsgBox, OK
 	;Process, Close, Overwolf.exe
 	Process, Close, Untapped.gg Companion.exe
 	Process, WaitClose, Untapped.gg Companion.exe
-	;Process, Close, BorderlessGaming.exe
-	;Process, WaitClose, BorderlessGaming.exe
+	Process, Close, BorderlessGaming.exe
+	Process, WaitClose, BorderlessGaming.exe
 	Process, Close, 17Lands MTGA Client.exe
 	Process, WaitClose, 17Lands MTGA Client.exe
 	}
