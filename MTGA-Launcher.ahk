@@ -1,12 +1,12 @@
 ﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts.
-;SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #SingleInstance force ; ensures no multiple runs at the same time
 SetTitleMatchMode, 3  ; ensures that Title matches exactly WinTitle
 
 ; Display SplashScreen (Image)
-	SplashImage, C:\Users\adria\Meine Ablage\03 - IT\GitHub\MTGA-Launcher\splash-mtg.jpg, B1
+	SplashImage, splash-mtg.jpg, B1
 
 ; Starting Up the Apps
 	;Run, C:\Program Files (x86)\Overwolf\OverwolfLauncher.exe, , Min
