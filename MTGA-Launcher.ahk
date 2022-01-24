@@ -14,7 +14,7 @@ SetTitleMatchMode, 3  ; ensures that Title matches exactly WinTitle
 	Run, C:\Users\adria\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\17Lands.com\17Lands MTGA Client.appref-ms
 	Run, D:\Wizards of the Coast\MTGA\MTGALauncher\MTGALauncher.exe
  ;Launch BorderlessGaming without Admin through CMD
-	run, %comspec% /c "set __COMPAT_LAYER=RunAsInvoker && start "" ^"D:\Borderless Gaming\BorderlessGaming.exe^""
+	;run, %comspec% /c "set __COMPAT_LAYER=RunAsInvoker && start "" ^"D:\Borderless Gaming\BorderlessGaming.exe^""
 
 Sleep, 5000
 WinClose, Untapped.gg
