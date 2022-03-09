@@ -25,19 +25,20 @@ SplashImage, Off
 WinActivate, MTGA
 ;Sleep, 5000
 ;WinClose, MTGA Assistant
-
+Sleep, 5000
 ; By exiting MTGA → closing all the Apps
 	WinWaitClose, MTGA
-	Sleep, 500
+	Sleep, 800
 	; ask, if Addons should be killed
 	MsgBox, 1, , Press OK to close MTGA Addons
 IfMsgBox, OK
 	{
+	Sleep, 20000
 	;Process, Close, Overwolf.exe
 	Process, Close, Untapped.gg Companion.exe
 	Process, WaitClose, Untapped.gg Companion.exe
-	Process, Close, BorderlessGaming.exe
-	Process, WaitClose, BorderlessGaming.exe
+	;Process, Close, BorderlessGaming.exe
+	;Process, WaitClose, BorderlessGaming.exe
 	Process, Close, 17Lands MTGA Client.exe
 	Process, WaitClose, 17Lands MTGA Client.exe
 	}
